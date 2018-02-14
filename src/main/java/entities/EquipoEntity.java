@@ -39,7 +39,7 @@ public class EquipoEntity {
     @Column(name = "CODE", length = 50)
 	private String nombre;
 
-	/*Name to liga*/
+	/*Name to league*/
 	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "LIGA_ID", foreignKey = @ForeignKey(name = "FK_EQUIPO_LIGA"))
 	private LigaEntity liga;
