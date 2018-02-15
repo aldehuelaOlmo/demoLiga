@@ -39,12 +39,12 @@ public class EquipoEntity {
     @Column(name = "CODE", length = 50)
 	private String nombre;
 
-	/*Name to league*/
-	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "LIGA_ID", foreignKey = @ForeignKey(name = "FK_EQUIPO_LIGA"))
-	private LigaEntity liga;
-
-	/*Name to player*/
-	@OneToMany(mappedBy = "equipo", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	private JugadorEntity jugador;
+//	/*Name to league*/
+//	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+//    @JoinColumn(name = "LIGA_ID", foreignKey = @ForeignKey(name = "FK_EQUIPO_LIGA"))
+//	private LigaEntity liga;
+//
+//	/*Name to player*/
+//	@OneToMany(mappedBy = "equipo", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+//	private JugadorEntity jugador;
 }

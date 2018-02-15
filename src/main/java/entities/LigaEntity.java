@@ -35,7 +35,7 @@ public class LigaEntity {
     @Column(name = "CODE", length = 50)
 	private String temporada;
 
-	/*This attribute content the teams that are this "liga"*/
-	@OneToMany(mappedBy = "liga", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	private EquipoEntity equipo;
+//	/*This attribute content the teams that are this "liga"*/
+//	@OneToMany(mappedBy = "liga", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+//	private EquipoEntity equipo;
 }

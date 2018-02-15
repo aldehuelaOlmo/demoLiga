@@ -37,9 +37,9 @@ public class JugadorEntity {
     @Column(name = "CODE", length = 50)
 	private String nombre;
 
-	/*Name to team*/
-	/*The type eager execute query when is necesary*/
-	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "EQUIPO_ID", foreignKey = @ForeignKey(name = "FK_EQUIPO_LIGA"))
-	private EquipoEntity equipo;
+//	/*Name to team*/
+//	/*The type eager execute query when is necesary*/
+//	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+//    @JoinColumn(name = "EQUIPO_ID", foreignKey = @ForeignKey(name = "FK_EQUIPO_LIGA"))
+//	private EquipoEntity equipo;
 }

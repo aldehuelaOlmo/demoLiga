@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/ligaController")
-public class LigaController {
+@RequestMapping("/equipoController")
+public class EquipoController {
 
-	@RequestMapping(value="/getLeagues", method=RequestMethod.GET)
-	public void getLeagues() {
+	@RequestMapping(value="/getTeams", method=RequestMethod.GET)
+	public void getTeams() {
 		
 	}
 }
